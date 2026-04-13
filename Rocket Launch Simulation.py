@@ -36,20 +36,33 @@ error = np.gradient(Ierror, t)
 
 
 #plots each graph in order
+plt.xlabel('time/ s')
+plt.ylabel('Altitude/ m')
 plt.plot(t, y)
 plt.show()
 
+
+plt.xlabel('time/ s')
+plt.ylabel('vertical Speed/ m/s')
 plt.plot(t, v)
 plt.show()
 
+plt.xlabel('time/ s')
+plt.ylabel('acceleration / m/s^2')
 plt.plot(t, a)
 plt.show()
 
+plt.xlabel('time/ s')
+plt.ylabel('Rocket Mass/ Kg')
 plt.plot(t, m)
 plt.show()
 
+plt.xlabel('time/ s')
+plt.ylabel('Fuel Mass/ Kg')
 plt.plot(t, fuelM)
 plt.show()
 
+plt.xlabel('time/ s')
+plt.ylabel('Velocity error/ m/s')
 plt.plot(t, error)
 plt.show()
